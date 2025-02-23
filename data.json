@@ -1,0 +1,194 @@
+{
+    "section": {
+      "aboutAgency": {
+        "title": "Sobre la agencia",
+        "content": "Bienvenido a nuestra agencia de adopción de gatos. Somos un equipo comprometido con el bienestar de los felinos que han sido rescatados de situaciones difíciles. Nuestra principal misión es encontrarles hogares amorosos y responsables donde puedan vivir felices, saludables y rodeados de cariño. Nos esforzamos cada día para asegurar que cada gato reciba la atención y el cuidado que merece, hasta que encuentre a su familia definitiva. Contamos con un proceso de adopción sencillo y transparente, basado en el respeto por los animales y el compromiso de los adoptantes. Antes de que un gato sea puesto en adopción, realizamos una evaluación detallada de su salud y comportamiento para asegurarnos de que sea una buena coincidencia con su futuro hogar. Además, ofrecemos asesoramiento y soporte post-adopción, para garantizar que tanto el gato como la familia se adapten bien a su nueva vida juntos."
+      },
+      "videoSection": {
+        "title": "Video de nuestros gatos",
+        "description": "Mire un video de algunos de nuestros adorables gatos:",
+        "video": {
+          "src": "../../../videos/video1.mp4",
+          "controls": true,
+          "width": 600
+        }
+      },
+      "gatos": {
+        "title": "Nuestros gatos",
+        "table": {
+          "headers": [
+            "Numero",
+            "Foto",
+            "Nombre",
+            "Fecha de nacimiento",
+            "Raza",
+            "Carácter"
+          ],
+          "rows": [
+            {
+              "numero": 1,
+              "foto": "/src/fotos/cat1.jpg",
+              "nombre": "Gatito",
+              "fecha_nacimiento": "01.03.2020",
+              "raza": "Siamés",
+              "caracter": "Dormilón"
+            },
+            {
+              "numero": 2,
+              "foto": "/src/fotos/cat2.jpg",
+              "nombre": "Lena",
+              "fecha_nacimiento": "15.07.2019",
+              "raza": "Persa",
+              "caracter": "Travieso"
+            },
+            {
+              "numero": 3,
+              "foto": "/src/fotos/cat3.jpg",
+              "nombre": "Felix",
+              "fecha_nacimiento": "10.11.2021",
+              "raza": "Maine Coon",
+              "caracter": "Perezoso"
+            },
+            {
+              "numero": 4,
+              "foto": "/src/fotos/cat4.jpg",
+              "nombre": "Luna",
+              "fecha_nacimiento": "05.06.2018",
+              "raza": "Británico de pelo corto",
+              "caracter": "Inteligente"
+            },
+            {
+              "numero": 5,
+              "foto": "/src/fotos/cat5.jpg",
+              "nombre": "Simba",
+              "fecha_nacimiento": "21.09.2022",
+              "raza": "Ragdoll",
+              "caracter": "Sociable"
+            }
+          ]
+        }
+      },
+      "ubicacion": {
+        "title": "Donde estamos",
+        "section": {
+          "subtitle": "Ubicación",
+          "address": {
+            "line1": "Universidad Pontificia Comillas",
+            "line2":"Escuela Técnica Superior de Ingeniería (ICAI)",
+            "line3":"C. de Alberto Aguilera, 25, Centro",
+            "line4":"28015 Madrid"
+          },
+          "map": {
+            "src": "https://www.google.com/maps/embed?pb=...",
+            "width": "600",
+            "height": "450",
+            "style": "border:0;",
+            "allowfullscreen": true,
+            "loading": "lazy"
+          }
+        }
+      },
+      "adoptionForm": {
+        "title": "Formulario de adopción de gato",
+        "formFields": {
+          "personalData": {
+            "legend": "Datos Personales",
+            "fields": [
+              {
+                "label": "Nombre y Apellido",
+                "type": "text",
+                "id": "name",
+                "name": "name",
+                "class": "form-control w-100",
+                "required": true
+              },
+              {
+                "label": "Teléfono",
+                "type": "tel",
+                "id": "phone",
+                "name": "phone",
+                "class": "form-control w-100",
+                "required": true
+              },
+              {
+                "label": "Correo Electrónico",
+                "type": "email",
+                "id": "email",
+                "name": "email",
+                "class": "form-control w-100",
+                "required": true
+              }
+            ]
+          },
+          "catSelection": {
+            "legend": "Selección de Gato",
+            "fields": [
+              {
+                "label": "Selecciona un gato",
+                "type": "select",
+                "id": "cat",
+                "name": "cat",
+                "options": ["Gatito", "Lena", "Felix", "Luna", "Simba"],
+                "required": true
+              },
+              {
+                "label": "Motivo de la adopción",
+                "type": "textarea",
+                "id": "reason",
+                "name": "reason",
+                "rows": 4,
+                "cols": 30,
+                "required": true
+              }
+            ]
+          },
+          "adoptionConditions": {
+            "legend": "Condiciones de Adopción",
+            "fields": [
+              {
+                "label": "Tipo de vivienda",
+                "type": "radio",
+                "name": "home_type",
+                "options": [
+                  {
+                    "id": "home_apartment",
+                    "value": "apartment",
+                    "label": "Apartamento"
+                  },
+                  {
+                    "id": "home_house",
+                    "value": "house",
+                    "label": "Casa"
+                  }
+                ],
+                "required": true
+              },
+              {
+                "label": "¿Tienes otras mascotas?",
+                "type": "checkbox",
+                "id": "other_pets",
+                "name": "other_pets"
+              },
+              {
+                "label": "¿Has tenido un gato antes?",
+                "type": "checkbox",
+                "id": "experience",
+                "name": "experience"
+              }
+            ]
+          }
+        },
+        "buttons": [
+          {
+            "type": "submit",
+            "value": "Enviar Solicitud"
+          },
+          {
+            "type": "reset",
+            "value": "Borrar Formulario"
+          }
+        ]
+      }
+    }
+  }
+  

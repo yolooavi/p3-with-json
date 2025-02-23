@@ -21,8 +21,8 @@ header {
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
+h1 {
+    text-align: center;
 }
 
 nav ul {
@@ -193,6 +193,18 @@ video {
     margin-top: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.address span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.page-title {
+    background-color: #4CAF50;
+    color: #eee;
+    margin: 0;
+    padding-bottom: 1rem;
 }
 
 @media screen and (max-width: 768px) {
